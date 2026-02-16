@@ -1,14 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guilherme card</title>
     <style>
-        
+
+        body {
+            margin-left: 25%;
+            margin-right: 25%;
+            background-color: black;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Libre Baskerville", serif;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+
+            background: linear-gradient(
+                -45deg,
+                #026779,
+                #0575e6,
+                #122a94,
+                #0f2174
+            );
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+
+            min-width: 332px;
+        }
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .main img{
+            margin-top: 30px;
+            border: black solid 2px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .main footer{
+            margin-top: 255px;
+        }
+        .buttons ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            
+        }
+
+        .buttons li {
+            margin: 15px 0;
+        }
+
+        .buttons a{
+            display: block;
+            width: 400px;
+            margin: auto;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            border: 3px solid black;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+
+        }
+
+        .buttons a:hover {
+            background: rgba(15, 0, 0, 0.329);
+        }
+
+
     </style>
 </head>
 <body>
-    
+    <div class="main">
+        <div>
+            <img src="https://th.bing.com/th/id/R.f008132fca46d36c8469c9de4164b057?rik=qTK0ra27Z86EUg&pid=ImgRaw&r=0" alt="" height="150px" >
+        </div>
+
+        <div>
+            <h1>Guilherme </h1>
+        </div>
+        <div>
+            <h2>Profissional em programação</h2>
+        </div>
+
+        <div class="buttons">
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Currículo</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Likedln</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Github</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Gmail</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Whatsapp</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Projeto iniciado</p> 
+            <p><a href="https://victor-schiavo.vercel.app/" style="text-decoration: none;">Versão do professor</a></p>
+        </footer>
+        
+    </div>
 </body>
 </html>
