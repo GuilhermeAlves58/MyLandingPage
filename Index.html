@@ -13,22 +13,33 @@
             margin-top: 0;
             margin-bottom: 0;
             font-family: "Libre Baskerville", serif;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform: translateY(20px);
+            }
+            to{
+                opacity:1;
+                transform: translateY(0);
+            }
         }
 
         .main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             margin: 0;
             height: 100vh;
 
             background: linear-gradient(
                 -45deg,
-                #026779,
-                #0575e6,
-                #122a94,
-                #0f2174
+                #1E3A8A,
+                #2563EB,
+                #1D4ED8,
+                #60A5FA
             );
             background-size: 400% 400%;
             animation: gradientMove 15s ease infinite;
@@ -47,16 +58,13 @@
             }
         }
 
-        .main img{
-            margin-top: 30px;
+        #imageProfile{
+            margin-top: 50px;
             border: black solid 2px;
             border-radius: 50%;
             background-color: black;
         }
 
-        .main footer{
-            margin-top: 255px;
-        }
         .buttons ul{
             list-style: none;
             padding: 0;
@@ -75,49 +83,57 @@
             margin: auto;
             padding: 15px;
             text-decoration: none;
-            color: black;
-            border: 3px solid black;
+            color: white;
+            border: 3px solid rgba(0, 0, 0, 0.7);
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
 
         }
 
-        .buttons a:hover {
-            background: rgba(15, 0, 0, 0.329);
+        .buttons a:hover{
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
 
+        h1{color:white;margin-bottom:5px;
+        }
+        h2{color:rgba(255,255,255,0.8);font-weight:normal;font-size:18px;
+        }
     </style>
 </head>
 <body>
     <div class="main">
-        <div>
-            <img src="https://th.bing.com/th/id/R.f008132fca46d36c8469c9de4164b057?rik=qTK0ra27Z86EUg&pid=ImgRaw&r=0" alt="" height="150px" >
+        <div id="imageProfile">
+            <img src="https://th.bing.com/th/id/R.f008132fca46d36c8469c9de4164b057?rik=qTK0ra27Z86EUg&pid=ImgRaw&r=0" alt="Imagem profile" height="200px" >
         </div>
 
         <div>
-            <h1>Guilherme </h1>
+            <h1>Guilherme Marcondes</h1>
         </div>
         <div>
-            <h2>Profissional em programação</h2>
+            <h2> Back-end Java | APIs REST • Spring Boot • Bancos de Dados</h2>
+            <h2> Front-end | • Html, CSS e Javascript • Node.js • React • Tailwind </h2>
         </div>
 
         <div class="buttons">
             <ul>
-                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Currículo</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Likedln</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Github</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Gmail</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" >Whatsapp</a></li>
+                <li><a href="/currículo programação.pdf"><img src="/ImagensEOutros/icons8-cv-80.png" alt="currículo" height="40px">Currículo</a></li>
+                <li><a href="https://www.linkedin.com/in/guilherme-alves-marcondes-dos-santos-160277341/"><img src="/ImagensEOutros/icons8-linkedin-48.png" alt="Likedln" height="40px">Likedln</a></li>
+                <li><a href="https://github.com/GuilhermeAlves58" ><img src="/ImagensEOutros/icons8-github-100.png" alt="Github" height="40px">Github</a></li>
+                <li><a href="mailto:guilherme.marcondesds@gmail.com" ><img src="/ImagensEOutros/icons8-gmail-48.png" alt="Gmail" height="40px">Gmail</a></li>
+                <li><a href="https://wa.me/5511933316930"><img src="/ImagensEOutros/icons8-whatsapp-48.png" alt="Whatsapp" height="40px">Whatsapp</a></li>
             </ul>
+        </div> 
+        <div class="bar">
+            <img src="/ImagensEOutros/icons8-java-64.png" alt="Java" height="40px">
+            <img src="/ImagensEOutros/icons8-javascript-48.png" alt="Javascript" height="40px">
+            <img src="/ImagensEOutros/icons8-css-24.png" alt="CSS3" height="40px">
+            <img src="/ImagensEOutros/icons8-html-48.png" alt="HTML5" height="40px">
+            <img src="/ImagensEOutros/icons8-spring-boot-48.png" alt="Spring-boot" height="40px">
         </div>
-
-        <footer>
-            <p>Projeto iniciado</p> 
-            <p><a href="https://victor-schiavo.vercel.app/" style="text-decoration: none;">Versão do professor</a></p>
-        </footer>
-        
     </div>
 </body>
 </html>
