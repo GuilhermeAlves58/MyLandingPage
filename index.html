@@ -4,133 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guilherme card</title>
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            background-color: black;
-            font-family: "Libre Baskerville", serif;
-            animation: fadeIn 1s ease;
-        }
-
-        @keyframes fadeIn{
-            from{
-                opacity:0;
-                transform: translateY(20px);
-            }
-            to{
-                opacity:1;
-                transform: translateY(0);
-            }
-        }
-
-        .main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0px 20px 0px 20px;
-            width: 100%;
-            max-width: 800px;
-
-            background: linear-gradient(
-                -45deg,
-                #1E3A8A,
-                #2563EB,
-                #1D4ED8,
-                #60A5FA
-            );
-            background-size: 400% 400%;
-            animation: gradientMove 15s ease infinite;
-        }
-        @keyframes gradientMove {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        #imageProfile{
-            margin-top: 50px;
-            border: black solid 2px;
-            border-radius: 50%;
-            background-color: black;
-        }
-         img{
-            border-radius: 50%;
-        }
-
-        .buttons ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            
-        }
-
-        .buttons li {
-            margin: 15px 0;
-        }
-
-        .buttons a{
-            display: block;
-            width: 400px;
-            margin: auto;
-            padding: 15px;
-            text-decoration: none;
-            color: white;
-            border: 3px solid rgba(0, 0, 0, 0.7);
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-
-        }
-
-        
-
-        .buttons a:hover{
-            background: rgba(255,255,255,0.15);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-
-
-        h1{
-            color:white;
-            margin-bottom:5px;
-        }
-        h2{
-            color:rgba(255,255,255,0.8);
-            font-weight:normal;font-size:18px;
-        }
-
-        @media (max-width: 480px){
-
-            h1{
-                font-size: 24px;
-                text-align: center;
-            }
-
-            h2{
-                font-size: 14px;
-                text-align: center;
-            }
-
-            .buttons a{
-                padding: 12px;
-                font-size: 14px;
-            }
-
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
@@ -148,11 +22,12 @@
 
         <div class="buttons">
             <ul>
-                <li><a href="ImagensEOutros/currículo-programacao.pdf"><img src="ImagensEOutros/icons8-cv-80.png" alt="currículo" height="40px">Currículo</a></li>
-                <li><a href="https://www.linkedin.com/in/guilherme-alves-marcondes-dos-santos-160277341/"><img src="ImagensEOutros/icons8-linkedin-48.png" alt="Likedln" height="40px">Likedln</a></li>
-                <li><a href="https://github.com/GuilhermeAlves58" ><img src="ImagensEOutros/icons8-github-100.png" alt="Github" height="40px">Github</a></li>
-                <li><a href="mailto:guilherme.marcondesds@gmail.com" ><img src="ImagensEOutros/icons8-gmail-48.png" alt="Gmail" height="40px">Gmail</a></li>
-                <li><a href="https://wa.me/5511933316930"><img src="ImagensEOutros/icons8-whatsapp-48.png" alt="Whatsapp" height="40px">Whatsapp</a></li>
+                <li><a href="ImagensEOutros/currículo-programacao.pdf">Currículo</a></li>
+                <li><a href="https://www.linkedin.com/in/guilherme-alves-marcondes-dos-santos-160277341/">Likedln</a></li>
+                <li><a href="https://github.com/GuilhermeAlves58">Github</a></li>
+                <li><a href="mailto:guilherme.marcondesds@gmail.com">Gmail</a></li>
+                <li><a href="https://wa.me/5511933316930">Whatsapp</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
             </ul>
         </div> 
         <div class="bar">
